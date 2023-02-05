@@ -1,0 +1,23 @@
+			
+//        /* Task code goes here. */
+//			if (ButtonState)
+//			{
+//				GPIO_write(PORT_0, PIN1,  PIN_IS_HIGH);
+//			}
+//			else
+//			{
+//				GPIO_write(PORT_0, PIN1, PIN_IS_LOW);
+//			}
+//			
+//			vTaskDelay(100);
+//			
+//			GPIO_write(PORT_0, PIN4, PIN_IS_LOW);//idle
+
+
+
+
+        /* Task code goes here. */
+//			ButtonState = GPIO_read(PORT_0, PIN0);
+//			GPIO_write(PORT_0, PIN4, PIN_IS_LOW);
+//			vTaskDelay(20);
+//			GPIO_write(PORT_0, PIN4, PIN_IS_LOW);	//idle

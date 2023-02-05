@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    history
+{% endblock %}
+
+{% block main %}
+    <div class="section">
+        <h4>history</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>symbol</th>
+                            <th>shares</th>
+                            <th>shares_value</th>
+                            <th>cash_before</th>
+                            <th>cash_after</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    
+                    {% for table in tables %}
+                        <tr> 
+                            <td>{{table.symbol}}</td>
+                            <td>{{table.shares}}</td>
+                            <td>{{table.shares_value}}</td>
+                            <td>{{table.cash}}</td>
+                            <td>{{table.rest}}</td>
+                        </tr>                   
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block body %}
+        <form action="/answer" method="post">
+        <h1>
+        Polynomial
+        </h1> 
+        <ul id='note'>
+             <li>You should provide the degree of the your polynomial to generate coefficient placeholders such as A and B in  Ax^2+Bx+1=0. </li>
+             <li>If the coefficient of the variable x is equal to zero you should remember to provide it as 0 in the placeholder.</li>
+             <li>Powers are considered in a descending order eg: Ax^2+Bx+1=0.</li>
+        </ul>
+        <div id='degree'>
+                What is the degree of your polynomial?
+                <input type="number" min=1 autocomplete="off" name="XX" placeholder="degree" id="poly">
+                <button onclick="add()" type="button" id="b" >Show coefficients</button> 
+        </div>        
+        </form>
+        
+        <script>
+                function add()
+                {            
+                        let form = document.querySelector("form");
+                        var div1 = document.createElement("div");
+                        div1.setAttribute("id", "D");
+                
+                        let count = document.querySelector('#poly').value;
+                        if (count != 0)
+                        {
+                        for (i = 0; i <= count; i++) {
+                        const input = document.createElement("input");
+                        input.setAttribute("type", "number");
+                        input.setAttribute("placeholder", "Coefficient of X^".concat(count-i));
+                        input.setAttribute("id", "x");
+                        input.setAttribute("autocomplete","off");
+                        input.setAttribute("name", i);
+                        div1.appendChild(input);       
+                        }
+                        const button = document.createElement("input");
+                        button.setAttribute("type", "submit");
+                        button.innerHTML="Show Roots"
+                        button.setAttribute("id", "x");
+                        form.appendChild(div1);
+                        form.appendChild(button); 
+                        let h=document.getElementById("b");
+                        h.setAttribute("disabled","disabled");       
+                        //let p=document.getElementById("poly");
+                        //p.setAttribute("disabled","disabled");
+                        
+                }       
+                }
+        </script>                   
+{% endblock %}

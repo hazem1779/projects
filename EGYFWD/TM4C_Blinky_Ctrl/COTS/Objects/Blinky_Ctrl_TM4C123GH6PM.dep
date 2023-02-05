@@ -1,0 +1,57 @@
+Dependencies for Project 'Blinky_Ctrl', Target 'TM4C123GH6PM': (DO NOT MODIFY !)
+CompilerVersion: 6160000::V6.16::ARMCLANG
+F (.\APP\Blinky\blinky.c)(0x63AA0D78)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-covered-switch-default -Wno-unreachable-code-break -I ./HAL/LED -I ./MCAL/DIO -I ./MCAL/GPT -I ./MCAL/Interrupt_control -I ./MCAL/GPIO -I ./MCAL/SysTick-I./RTE/_TM4C123GH6PM-IC:/Users/hazem/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/hazem/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="536" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/blinky.o -MD)
+I (HAL\LED\LEDConfig.h)(0x63AA0D2F)
+I (MCAL\DIO\DIO_driver.h)(0x63A891AD)
+I (MCAL\GPIO\GPIO_driver.h)(0x63A8971B)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60355C30)
+I (MCAL\GPT\GPT_driver.h)(0x63A89E94)
+I (MCAL\Interrupt_control\IntCtrl_driver.h)(0x63A8A893)
+I (MCAL\SysTick\SysTick_driver.h)(0x63AA0EFE)
+F (.\HAL\LED\LEDConfig.c)(0x63AA0F0F)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-covered-switch-default -Wno-unreachable-code-break -I ./HAL/LED -I ./MCAL/DIO -I ./MCAL/GPT -I ./MCAL/Interrupt_control -I ./MCAL/GPIO -I ./MCAL/SysTick-I./RTE/_TM4C123GH6PM-IC:/Users/hazem/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/hazem/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="536" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/ledconfig.o -MD)
+I (HAL\LED\LEDConfig.h)(0x63AA0D2F)
+I (MCAL\DIO\DIO_driver.h)(0x63A891AD)
+I (MCAL\GPIO\GPIO_driver.h)(0x63A8971B)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60355C30)
+I (MCAL\GPT\GPT_driver.h)(0x63A89E94)
+I (MCAL\Interrupt_control\IntCtrl_driver.h)(0x63A8A893)
+I (MCAL\SysTick\SysTick_driver.h)(0x63AA0EFE)
+F (.\HAL\LED\LEDConfig.h)(0x63AA0D2F)()
+F (.\MCAL\DIO\DIO_driver.c)(0x63A89B58)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-covered-switch-default -Wno-unreachable-code-break -I ./HAL/LED -I ./MCAL/DIO -I ./MCAL/GPT -I ./MCAL/Interrupt_control -I ./MCAL/GPIO -I ./MCAL/SysTick-I./RTE/_TM4C123GH6PM-IC:/Users/hazem/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/hazem/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="536" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/dio_driver.o -MD)
+I (MCAL\DIO\DIO_driver.h)(0x63A891AD)
+I (MCAL\GPIO\GPIO_driver.h)(0x63A8971B)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60355C30)
+F (.\MCAL\DIO\DIO_driver.h)(0x63A891AD)()
+F (.\MCAL\GPIO\GPIO_driver.h)(0x63A8971B)()
+F (.\MCAL\GPIO\GPIO_driver.c)(0x63A8914C)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-covered-switch-default -Wno-unreachable-code-break -I ./HAL/LED -I ./MCAL/DIO -I ./MCAL/GPT -I ./MCAL/Interrupt_control -I ./MCAL/GPIO -I ./MCAL/SysTick-I./RTE/_TM4C123GH6PM-IC:/Users/hazem/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/hazem/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="536" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/gpio_driver.o -MD)
+I (MCAL\DIO\DIO_driver.h)(0x63A891AD)
+I (MCAL\GPIO\GPIO_driver.h)(0x63A8971B)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60355C30)
+F (.\MCAL\GPT\GPT_driver.c)(0x63A891E5)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-covered-switch-default -Wno-unreachable-code-break -I ./HAL/LED -I ./MCAL/DIO -I ./MCAL/GPT -I ./MCAL/Interrupt_control -I ./MCAL/GPIO -I ./MCAL/SysTick-I./RTE/_TM4C123GH6PM-IC:/Users/hazem/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/hazem/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="536" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/gpt_driver.o -MD)
+I (HAL\LED\LEDConfig.h)(0x63AA0D2F)
+I (MCAL\DIO\DIO_driver.h)(0x63A891AD)
+I (MCAL\GPIO\GPIO_driver.h)(0x63A8971B)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60355C30)
+I (MCAL\GPT\GPT_driver.h)(0x63A89E94)
+I (MCAL\Interrupt_control\IntCtrl_driver.h)(0x63A8A893)
+I (MCAL\SysTick\SysTick_driver.h)(0x63AA0EFE)
+F (.\MCAL\GPT\GPT_driver.h)(0x63A89E94)()
+F (.\MCAL\Interrupt_control\IntCtrl_driver.c)(0x63A8A0E4)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-covered-switch-default -Wno-unreachable-code-break -I ./HAL/LED -I ./MCAL/DIO -I ./MCAL/GPT -I ./MCAL/Interrupt_control -I ./MCAL/GPIO -I ./MCAL/SysTick-I./RTE/_TM4C123GH6PM-IC:/Users/hazem/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/hazem/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="536" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/intctrl_driver.o -MD)
+I (MCAL\Interrupt_control\IntCtrl_driver.h)(0x63A8A893)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60355C30)
+F (.\MCAL\Interrupt_control\IntCtrl_driver.h)(0x63A8A893)()
+F (.\MCAL\SysTick\SysTick_driver.c)(0x63AA0EFF)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-covered-switch-default -Wno-unreachable-code-break -I ./HAL/LED -I ./MCAL/DIO -I ./MCAL/GPT -I ./MCAL/Interrupt_control -I ./MCAL/GPIO -I ./MCAL/SysTick-I./RTE/_TM4C123GH6PM-IC:/Users/hazem/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/hazem/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="536" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/systick_driver.o -MD)
+I (MCAL\SysTick\SysTick_driver.h)(0x63AA0EFE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60355C30)
+F (.\MCAL\SysTick\SysTick_driver.h)(0x63AA0EFE)()
+F (RTE\Device\TM4C123GH6PM\startup_TM4C123.s)(0x51B6E406)(--target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -masm=auto -c-gdwarf-4 -Wa,armasm,--pd,"__EVAL SETA 1"-I./RTE/_TM4C123GH6PM-IC:/Users/hazem/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/hazem/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-Wa,armasm,--pd,"__UVISION_VERSION SETA 536" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"TM4C123GH6PM SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o ./objects/startup_tm4c123.o)
+F (RTE\Device\TM4C123GH6PM\system_TM4C123.c)(0x63A88A1F)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-covered-switch-default -Wno-unreachable-code-break -I ./HAL/LED -I ./MCAL/DIO -I ./MCAL/GPT -I ./MCAL/Interrupt_control -I ./MCAL/GPIO -I ./MCAL/SysTick-I./RTE/_TM4C123GH6PM-IC:/Users/hazem/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/hazem/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="536" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/system_tm4c123.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60355C30)
+I (C:\Users\hazem\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123.h)(0x530EF2F6)
+I (C:\Users\hazem\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123GH6PM.h)(0x550FE22C)
+I (C:\Users\hazem\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm4.h)(0x60D43D42)
+I (C:\Users\hazem\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D43D42)
+I (C:\Users\hazem\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D43D42)
+I (C:\Users\hazem\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armclang.h)(0x60D43D42)
+I (C:\Users\hazem\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\mpu_armv7.h)(0x60D43D42)
+I (C:\Users\hazem\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\system_TM4C123.h)(0x51B6E406)

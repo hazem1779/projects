@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<h2>The roots to the equation are:</h2>
+<div id="Z">
+{% for g in range(leng) %}
+<div id="z">{{x[g]}}</div>
+{% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,121 @@
+;-----Enabling Clock Registers-------- 
+
+SYSCTRL_RCGCGPIO_BASE 	EQU		0x400FE000 
+RCGCGPIO_OFFSET 		EQU		0x608
+AHB_OFFSET				EQU		0x06C	
+SYSCTRL_RCGCGPIO_R 		EQU		SYSCTRL_RCGCGPIO_BASE +	RCGCGPIO_OFFSET
+SYSCTRL_GPIOHBCTL_R		EQU		SYSCTRL_RCGCGPIO_BASE + AHB_OFFSET	
+;-------------GPIOF Registers--------
+
+GPIOF_BASE				EQU		0x40025000
+GPIOF_AHB_BASE			EQU		0x4005D000
+
+
+DATA_OFFSET				EQU 	0x3FC
+DIR_OFFSET				EQU 	0x400
+DEN_OFFSET				EQU 	0x51C
+
+GPIOF_DIR_R				EQU		GPIOF_BASE + DIR_OFFSET
+GPIOF_DEN_R				EQU		GPIOF_BASE + DEN_OFFSET
+GPIOF_DATA_R			EQU		GPIOF_BASE + DATA_OFFSET
+	
+GPIOF_AHB_DIR_R			EQU		GPIOF_AHB_BASE + DIR_OFFSET
+GPIOF_AHB_DEN_R			EQU		GPIOF_AHB_BASE + DEN_OFFSET
+GPIOF_AHB_DATA_R		EQU		GPIOF_AHB_BASE + DATA_OFFSET	
+
+;-----PINS CONFIGURATION--------
+;RCGC_GPIOF_EN PIN---> 5
+
+;PF1 GPIO RGB LED (Red)
+;PF2 GPIO RGB LED (Blue)
+;PF3 GPIO RGD LED (Green)
+
+RCGC_GPIOF_EN			EQU 	(1 << 5)
+LED_RED					EQU		(1 << 1)
+LED_BLUE				EQU		(1 << 2)
+LED_GREEN				EQU		(1 << 3)
+
+	
+		
+	
+						AREA |.text|, CODE, READONLY, ALIGN = 2
+						THUMB
+						EXPORT __main			
+__main
+			BL 			GPIO_Init
+loop		
+			BL			BLUE_ON	
+			B			loop			
+GPIO_Init
+			LDR			R1,=SYSCTRL_RCGCGPIO_R
+			LDR			R0,[R1]
+			ORRS		R0,#RCGC_GPIOF_EN
+			STR			R0,[R1]
+			NOP
+			NOP
+			BX			LR
+RED_ON
+			;--DIR--
+			LDR			R1,=GPIOF_DIR_R
+			LDR			R0,[R1]
+			ORRS		R0,#LED_RED
+			STR			R0,[R1]
+			;--DEN--
+			LDR			R1,=GPIOF_DEN_R
+			LDR			R0,[R1]
+			ORRS		R0,#LED_RED
+			STR			R0,[R1]
+			;DATA
+			LDR			R1,=GPIOF_DATA_R
+			LDR			R0,[R1]
+			ORRS		R0,#LED_RED
+			STR			R0,[R1]
+						
+			BX			LR
+
+BLUE_ON
+			;--DIR--
+			LDR			R1,=GPIOF_DIR_R
+			LDR			R0,[R1]
+			ORRS		R0,#LED_BLUE
+			STR			R0,[R1]
+			;--DEN--
+			LDR			R1,=GPIOF_DEN_R
+			LDR			R0,[R1]
+			ORRS		R0,#LED_BLUE
+			STR			R0,[R1]	
+			;DATA
+			LDR			R1,=GPIOF_DATA_R
+			LDR			R0,[R1]
+			ORRS		R0,#LED_BLUE
+			STR			R0,[R1]	
+			BX			LR			
+GREEN_ON
+			;--DIR--
+			LDR			R1,=GPIOF_DIR_R
+			LDR			R0,[R1]
+			ORR			R0,#LED_GREEN
+			STR			R0,[R1]
+			;--DEN--
+			LDR			R1,=GPIOF_DEN_R
+			LDR			R0,[R1]
+			ORRS		R0,#LED_GREEN
+			STR			R0,[R1]
+			;DATA
+			LDR			R1,=GPIOF_DATA_R
+			LDR			R0,[R1]
+			ORRS		R0,#LED_GREEN
+			STR			R0,[R1]
+			BX			LR	
+LIGHT_OFF
+			LDR			R1,=GPIOF_DATA_R
+			MOV			R0,#0
+			STR			R0,[R1]	
+			BX			LR
+Delay
+			
+			
+			ALIGN
+			END	
+	
+	

@@ -1,0 +1,11 @@
+sort1 uses: Bubble sort
+
+How do you know?:this is noted in executing the program less than sort3 in all sorted and more time in random and the slowest method in reversed
+
+sort2 uses: Merge sort
+
+How do you know?: the fastest method in random and reversed numbers by a noticable amount of seconds
+
+sort3 uses: Selection sort
+
+How do you know?: the slowest in sorted 50000 by a noticable amount of seconds

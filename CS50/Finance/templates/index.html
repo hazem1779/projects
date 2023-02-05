@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    index
+{% endblock %}
+
+{% block main %}
+    <div class="section">
+        <h4>stocks</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>symbol</th>
+                            <th>total shares</th>
+                            <th>share total price</th>
+                            <th>Cash Now</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    
+                    {% for i in range(l) %}
+                    <tr>
+                        <td>{{s[i]}}</td>
+                        <td>{{count_share[i]}}</td>
+                        <td>${{sums[i]}}</td>
+                     {% endfor %}
+                    <td>${{actual_cash}}</td>    
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    bought!
+{% endblock %}
+
+{% block main %}
+    <div class="section">
+        <h4>bought</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>symbol</th>
+                            <th>price</th>
+                            <th>share value</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                    
+                   
+                    <tr>
+                        <td>{{symbol}}</td>
+                        <td>{{price}}</td>
+                        <td>${{shares_value}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+{% endblock %}
