@@ -6,7 +6,7 @@ IMPORTANT NOTES:
 3-The main purpose of these projects is completely educational. 
 
 *******************************************************************************************************************
-This is my own repository for the projects I complete and courses I have taken in during my career.
+This is my own repository for the projects I complete and courses I have taken during my career.
 It contains 4 subfolders as follows:
 
 /CS50
