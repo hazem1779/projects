@@ -1,0 +1,5 @@
+../Core/Src/main.c:20:5:main	8	static
+../Core/Src/main.c:38:6:error_handler	4	static
+../Core/Src/main.c:43:6:UART2_init	8	static
+../Core/Src/main.c:63:6:SystemClock_Config	8	static
+../Core/Src/main.c:90:6:write_BackupSRAM	40	static
