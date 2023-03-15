@@ -1,2 +1,0 @@
-../Src/main.c:10:5:main	16	static
-../Src/main.c:28:6:USART3_IRQHandler	4	static
