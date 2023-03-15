@@ -13,7 +13,7 @@ It contains 4 subfolders as follows:
 /EGFWD
 /Trials
 /STM32F446RE
-/Graduation_Project_files
+
 
 1-CS50: This folder contains all the projects made in the course CS50 and the certificate awarded from Harvard University.
  	
@@ -26,4 +26,4 @@ STM32F446RE NUCLEO board and TIVA-C TM4C123GXL Launchpad including only C proble
 4-STM32F446RE: This subfolder contains developed drivers for the NUCLEO board and Applications on the same board
 using the STM32CubeMx Ide generated drivers and combining those existing drivers to develope appliactions on the board.
 
-5-Graduation_Project_files: This folder contains tables and simulink files associated with my graduation project.
+
